@@ -3,3 +3,9 @@
     margin:0px;
     padding:0px;
 }
+
+.btn{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:white;
+}

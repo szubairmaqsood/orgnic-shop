@@ -7,13 +7,21 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './core/componenents/home/home.component';
 import { LoginComponent } from './core/componenents/login/login.component';
 import { ProductFilterComponent } from './shopping/components/products/product-filter/product-filter.component';
+import { ProductCardComponent } from './shared/components/product-card/product-card.component';
+import { ProductQuantityComponent } from './shared/components/product-quantity/product-quantity.component';
+import { BsNavbarComponent } from './core/componenents/bs-navbar/bs-navbar.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    ProductFilterComponent
+    ProductFilterComponent,
+    ProductCardComponent,
+    ProductQuantityComponent,
+    BsNavbarComponent,
+    
   ],
   imports: [
     BrowserModule,
