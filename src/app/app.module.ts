@@ -2,31 +2,30 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './core/componenents/home/home.component';
-import { LoginComponent } from './core/componenents/login/login.component';
-import { ProductFilterComponent } from './shopping/components/products/product-filter/product-filter.component';
-import { ProductCardComponent } from './shared/components/product-card/product-card.component';
-import { ProductQuantityComponent } from './shared/components/product-quantity/product-quantity.component';
-import { BsNavbarComponent } from './core/componenents/bs-navbar/bs-navbar.component';
+import { AdminModule } from './admin/admin.module';
+import { SharedModule } from './shared/shared.module';
+import { CoreModule } from './core/core.module';
+import { ShoppingModule } from './shopping/shopping.module';
+
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    LoginComponent,
-    ProductFilterComponent,
-    ProductCardComponent,
-    ProductQuantityComponent,
-    BsNavbarComponent,
+   
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule 
+    FormsModule,
+    AdminModule,
+    SharedModule,
+    CoreModule,
+    ShoppingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
